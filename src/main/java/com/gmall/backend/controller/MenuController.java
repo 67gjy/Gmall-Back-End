@@ -48,6 +48,10 @@ public class MenuController {
     public Result deleteBatch(@RequestBody List<Integer> ids){
         return Result.success(menuService.removeByIds(ids));
     }
+//    @GetMapping("/ids")
+//    public Result findAllIds(@RequestParam(defaultValue = "") String name) {
+//        return Result.success(menuService.list().stream().map(Menu::getId));
+//    }
     @GetMapping
     public Result findAll(@RequestParam(defaultValue = "") String name) {
         return Result.success(menuService.findMenus(name));
