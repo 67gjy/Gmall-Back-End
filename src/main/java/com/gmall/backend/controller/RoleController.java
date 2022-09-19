@@ -3,15 +3,12 @@ package com.gmall.backend.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gmall.backend.common.Result;
-import com.gmall.backend.entity.RoleMenu;
+import com.gmall.backend.entity.Role;
+import com.gmall.backend.service.IRoleService;
 import org.springframework.web.bind.annotation.*;
+
 import javax.annotation.Resource;
 import java.util.List;
-
-import com.gmall.backend.service.IRoleService;
-import com.gmall.backend.entity.Role;
-
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>

@@ -5,18 +5,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gmall.backend.common.Constants;
 import com.gmall.backend.common.Result;
 import com.gmall.backend.entity.Dict;
+import com.gmall.backend.entity.Menu;
 import com.gmall.backend.mapper.DictMapper;
-import com.gmall.backend.mapper.RoleMenuMapper;
-import com.gmall.backend.service.IRoleService;
+import com.gmall.backend.service.IMenuService;
 import org.springframework.web.bind.annotation.*;
+
 import javax.annotation.Resource;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import com.gmall.backend.service.IMenuService;
-import com.gmall.backend.entity.Menu;
-
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>

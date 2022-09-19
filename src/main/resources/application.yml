@@ -1,4 +1,5 @@
 server:
+  ip: 43.142.177.50
   port: 9090
 
 spring:
@@ -15,4 +16,5 @@ mybatis-plus:
 
 files:
   upload:
-    path: G:/GMall/files/
+#    path: G:/GMall/files/
+    path: /home/files/

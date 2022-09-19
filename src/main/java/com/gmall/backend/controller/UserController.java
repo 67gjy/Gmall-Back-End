@@ -9,22 +9,18 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gmall.backend.common.Constants;
 import com.gmall.backend.common.Result;
 import com.gmall.backend.controller.dto.UserDTO;
+import com.gmall.backend.entity.User;
+import com.gmall.backend.service.IUserService;
 import com.gmall.backend.utils.TokenUtils;
-import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.annotation.Resource;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.net.URLEncoder;
 import java.util.List;
-
-import com.gmall.backend.service.IUserService;
-import com.gmall.backend.entity.User;
-
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
 
 /**
  * <p>
@@ -68,7 +64,7 @@ public class UserController {
 
 //    个人信息
     @GetMapping("/username/{username}")
-    public Result findOne(@PathVariable String username) {
+    public Result findPerson(@PathVariable String username) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("username",username);
         return Result.success(userService.getOne(queryWrapper));

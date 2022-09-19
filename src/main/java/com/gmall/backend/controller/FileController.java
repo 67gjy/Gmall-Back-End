@@ -30,6 +30,11 @@ public class FileController {
     @Value("${files.upload.path}")
     private String fileUploadPath;
 
+
+    @Value("${server.ip}")
+    private String serverIp;
+
+
     @Resource
     private FileMapper fileMapper;
 
@@ -63,7 +68,7 @@ public class FileController {
             url = dbFiles.getUrl();
             uploadFile.delete();
         }else {
-            url = "http://localhost:9090/file/" + fileUUID;
+            url = "http://"+serverIp+":9090/file/" + fileUUID;
         }
 
 

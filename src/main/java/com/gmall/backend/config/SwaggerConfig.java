@@ -11,6 +11,7 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+
 @Configuration
 @EnableOpenApi
 public class SwaggerConfig {
@@ -27,7 +28,7 @@ public class SwaggerConfig {
     public Docket restApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("标准接口")
-                .apiInfo(apiInfo("Spring Boot中使用Swagger2构建RESTful APIs", "1.0"))
+                .apiInfo(apiInfo("Spring Boot中使用Swagger2构建RESTfulAPIs", "3.0.0"))
                 .useDefaultResponseMessages(true)
                 .forCodeGeneration(false)
                 .select()
@@ -51,4 +52,34 @@ public class SwaggerConfig {
                 .version(version)
                 .build();
     }
+
 }
+//@Configuration
+//@EnableOpenApi
+//public class Swagger {
+//    @Bean
+//    public Docket docket(){
+//        return new Docket(DocumentationType.OAS_30)
+//                .apiInfo(apiInfo())
+//                .enable(true)
+//                .groupName("ZRJ")
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.example.smredis.controller"))
+//                .paths(PathSelectors.ant("/controller/**"))
+//                .build();
+//    }
+//
+//
+//    @SuppressWarnings("all")
+//    public ApiInfo apiInfo(){
+//        return new ApiInfo(
+//                "zrj's api",
+//                "redis project",
+//                "v1.0",
+//                "2261839618@qq.com", //开发者团队的邮箱
+//                "ZRJ",
+//                "Apache 2.0",  //许可证
+//                "http://www.apache.org/licenses/LICENSE-2.0" //许可证链接
+//        );
+//    }
+//}

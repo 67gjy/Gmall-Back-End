@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
 @SpringBootApplication
-@MapperScan("com.gmall.backend.mapper")
+//@MapperScan("com.gmall.backend.mapper")
 public class BackEndApplication {
 
 
