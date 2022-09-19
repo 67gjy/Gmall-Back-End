@@ -1,5 +1,5 @@
 package com.gmall.backend.common;
-
+//后台的返回CODE
 public interface Constants {
     String CODE_200 = "200"; //成功
     String CODE_500 = "500"; //系统错误
@@ -9,6 +9,5 @@ public interface Constants {
 
     String DICT_TYPE_ICON = "icon";
 
-//    String ROLE_ADMIN = "ROLE_ADMIN";
-//    String ROLE_USER = "ROLE_USER";
+//    String ROLE_ADMIN = "ROLE_ADMIN"; String ROLE_USER = "ROLE_USER";
 }

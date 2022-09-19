@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//图表接口
 @RestController
 @RequestMapping("/echarts")
 public class EchartsController {

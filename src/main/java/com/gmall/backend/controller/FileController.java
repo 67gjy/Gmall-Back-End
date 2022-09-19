@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.List;
 
-//文件上传
+//文件管理接口
 
 @RestController
 @RequestMapping("/file")

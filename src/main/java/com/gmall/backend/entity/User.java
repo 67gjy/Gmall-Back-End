@@ -15,7 +15,7 @@ import lombok.ToString;
 
 /**
  * <p>
- * 
+ * 用户
  * </p>
  *
  * @author GJY

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 
 import java.util.Collections;
-
+//代码生成器
 public class CodeGenerator {
     public static void main(String[] args) {
         generate();

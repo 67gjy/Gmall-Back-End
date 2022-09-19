@@ -14,7 +14,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 
+ * 菜单
  * </p>
  *
  * @author GJY
